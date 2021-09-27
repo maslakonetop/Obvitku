@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".DialerActivity">
+    <RelativeLayout
+        android:id="@+id/rtlDialer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp">
+
+
+        <ImageButton
+            android:id="@+id/ibLogoStack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logoobvitku"
+            tools:ignore="ContentDescription"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rtlDialer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rtlDialer">
+
+        <ImageButton
+            android:id="@+id/ibTelpDinas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:background="@drawable/goverment"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/tvKantor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibTelpDinas"
+            android:text="Hubungi \nKantor Dinas"
+            tools:ignore="HardcodedText"
+            android:fontFamily="@font/arialbd"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/navajowhite"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textAlignment="center"/>
+        <ImageButton
+            android:id="@+id/ibTelponKadin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_80sdp"
+            android:layout_toEndOf="@+id/ibTelpDinas"
+            android:background="@drawable/man"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/tvKadin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibTelponKadin"
+            android:layout_alignStart="@+id/ibTelponKadin"
+            android:layout_alignEnd="@+id/ibTelponKadin"
+            android:layout_marginStart="-24dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="-35dp"
+            android:fontFamily="@font/arialbd"
+            android:maxLines="2"
+            android:text="Hubungi \nStake Holder"
+            android:textSize="@dimen/_15sdp"
+            android:textAlignment="center"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rtlDialer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/ibNoDinas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/telephone"
+            android:onClick="kantor"
+            android:layout_marginStart="@dimen/_20sdp"
+            tools:ignore="ContentDescription"/>
+
+        <ImageButton
+            android:id="@+id/ibNoKadin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_toEndOf="@+id/ibNoDinas"
+            android:background="@drawable/smartphone"
+            android:onClick="hape"
+            tools:ignore="ContentDescription"/>
+
+        <ImageButton
+            android:id="@+id/ibWhatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ibNoKadin"
+            android:background="@drawable/whatsapp"
+            android:onClick="pesanwa"
+            android:layout_marginStart="@dimen/_25sdp"
+            tools:ignore="ContentDescription"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rtlDialer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rtlDialer1"
+        android:layout_marginTop="25dp">
+
+        <EditText
+            android:id="@+id/etNoTelpon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="15"
+            android:inputType="phone"
+            android:fontFamily="@font/arial"
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvNamaDinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="42dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:enabled="false"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/tvNoKadin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="42dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNamaDinas"
+        android:enabled="false"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/tvNomerDinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvNoKadin"
+        app:layout_constraintStart_toEndOf="@+id/tvNamaDinas"
+        android:enabled="false"
+        tools:ignore="HardcodedText"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
