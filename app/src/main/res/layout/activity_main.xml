@@ -18,9 +18,10 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/logoobvitku"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp"/>
+            android:layout_marginTop="25dp"
+            android:background="@drawable/logoobvitku"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </RelativeLayout>
     <RelativeLayout
@@ -53,94 +54,215 @@
             android:id="@+id/btnPolres"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="@dimen/_25sdp"
             android:background="@drawable/polresclp"
-            android:onClick="polres" />
+            android:onClick="polres"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+        <TextView
+            android:id="@+id/tvPolres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnPolres"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:text="Polres Cilacap"
+            android:fontFamily="@font/robotocondensedbolditalica"
+            android:textColor="@color/maroon"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
 
         <ImageButton
             android:id="@+id/btnKodim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="@dimen/_25sdp"
             android:layout_toEndOf="@+id/btnPolres"
             android:background="@drawable/kodim"
-            android:onClick="kodim" />
+            android:onClick="kodim"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+        <TextView
+            android:id="@+id/tvKodim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnKodim"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_toEndOf="@id/btnPolres"
+            android:text="Kodim 0703 Cilacap"
+            android:fontFamily="@font/robotocondensedbolditalica"
+            android:textColor="@color/maroon"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"/>
+
 
         <ImageButton
             android:id="@+id/btnLanal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="15dp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
             android:layout_toEndOf="@+id/btnKodim"
             android:background="@drawable/lanal"
-            android:onClick="lanal" />
+            android:onClick="lanal"
+            tools:ignore="SpeakableTextPresentCheck"/>
+        <TextView
+            android:id="@+id/tvlanal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnLanal"
+            android:layout_toEndOf="@id/tvKodim"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:text="Lanal Cilacap"
+            android:fontFamily="@font/robotocondensedbolditalica"
+            android:textColor="@color/maroon"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
         <ImageButton
             android:id="@+id/btnLapas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btnPolres"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="15dp"
+            android:layout_below="@id/tvPolres"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_25sdp"
             android:background="@drawable/pengayoman"
-            android:onClick="lapas" />
+            android:onClick="lapas"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/tvLapas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLapas"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Kemenkumham Cilacap"
+            android:fontFamily="@font/robotocondensedbolditalica"
+            android:textColor="@color/maroon"
+            android:textStyle="bold"
+            />
 
         <ImageButton
             android:id="@+id/btnSatpolpp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btnKodim"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="5dp"
+            android:layout_below="@id/tvKodim"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_25sdp"
             android:layout_toEndOf="@+id/btnLapas"
             android:background="@drawable/satpolpp"
-            android:onClick="satpolpp" />
+            android:onClick="satpolpp"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+        <TextView
+            android:id="@+id/tvSatpol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSatpolpp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_toEndOf="@id/tvLapas"
+            android:fontFamily="@font/robotocondensedbolditalica"
+            android:text="SatPolPP"
+            android:textColor="@color/maroon"
+            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/btnDinkes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btnLanal"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvlanal"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_25sdp"
             android:layout_toEndOf="@+id/btnSatpolpp"
             android:background="@drawable/dinkes"
-            android:onClick="dinkes" />
+            android:onClick="dinkes"
+            tools:ignore="SpeakableTextPresentCheck"/>
+        <TextView
+            android:id="@+id/tvDinkes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnDinkes"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_toEndOf="@id/tvSatpol"
+            android:fontFamily="@font/robotocondensedbolditalica"
+            android:text="Dinkes Cilacap"
+            android:textColor="@color/maroon"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
 
         <ImageButton
             android:id="@+id/btnDisnaker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btnLapas"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="25dp"
+            android:layout_below="@id/tvLapas"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_25sdp"
             android:background="@drawable/disnaker"
-            android:onClick="naker" />
+            android:onClick="naker"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+        <TextView
+            android:id="@+id/tvDisnaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnDisnaker"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:text="Disnaker Cilacap"
+            android:fontFamily="@font/robotocondensedbolditalica"
+            android:textColor="@color/maroon"
+            android:textStyle="bold" />
+
 
         <ImageButton
             android:id="@+id/btnDishub"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btnSatpolpp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="35dp"
+            android:layout_below="@id/tvSatpol"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_25sdp"
             android:layout_toEndOf="@+id/btnDisnaker"
             android:background="@drawable/dishub"
-            android:onClick="dishub" />
+            android:onClick="dishub"
+            tools:ignore="SpeakableTextPresentCheck"/>
+        <TextView
+            android:id="@+id/tvDishub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnDishub"
+            android:layout_toEndOf="@id/tvDisnaker"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:text="Dishub Kab. Cilacap"
+            android:fontFamily="@font/robotocondensedbolditalica"
+            android:textColor="@color/maroon"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
         <ImageButton
             android:id="@+id/btnDamkar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btnDinkes"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="25dp"
+            android:layout_below="@id/tvDinkes"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_25sdp"
             android:layout_toEndOf="@+id/btnDishub"
             android:background="@drawable/damkar"
-            android:onClick="damkar" />
+            android:onClick="damkar"
+            tools:ignore="SpeakableTextPresentCheck"/>
+        <TextView
+            android:id="@+id/tvDamkar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnDamkar"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_toEndOf="@id/tvDishub"
+            android:fontFamily="@font/robotocondensedbolditalica"
+            android:text="Damkar"
+            android:textColor="@color/maroon"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     </ScrollView>
@@ -149,7 +271,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/scrBody"
-        android:layout_marginTop="25dp">
+        android:layout_marginTop="@dimen/_30sdp">
 
         <ImageView
             android:id="@+id/imgSikil"
